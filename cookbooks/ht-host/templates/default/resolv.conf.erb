@@ -1,0 +1,5 @@
+domain <%= node[:host][:domain] %>
+<% @node[:host][:nameservers].each do |ns| %>
+nameserver <%= ns %>
+<% end %>
+
